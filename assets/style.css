@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(90deg ,#845EC2, #008F7A);
+    background-repeat: no-repeat;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    color: white;
+    opacity: 80%;
+    text-shadow: 0px 5px 22px rgb(0, 0, 0, 5);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+
+    margin-top: -150px;
+    margin-bottom: 100px;
+}
+
+#relogio {
+    background: transparent;
+    box-shadow: -4px 5px 22px rgb(0, 0, 0, 0.5);
+    border-radius: 50px;
+    
+    width: 780px;
+    height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+#relogio:hover {
+    animation: animation_2 1s forwards;
+}
+
+#relogio div {
+    opacity: 50%;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: -4px 5px 22px rgb(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 220px;
+    height: 220px;
+}
+
+#relogio div:hover {
+    animation: animation_1 1s forwards;
+}
+
+#relogio span {
+    font-size: 90px;
+    font-weight: bold;
+}
+
+#relogio .Tempo {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: transparent;
+
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0px 5px 22px rgb(0, 0, 0, 5);
+    color: white;
+    opacity: 80%;
+
+    margin-top: 120px;
+    margin-bottom: -120px ;
+}
+
+footer:hover{
+    animation: animation_3 1s forwards;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #008F7A;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 0px 5px 12px rgb(0, 0, 0, 5);
+
+
+}
+
+@keyframes animation_1 {
+    0% {
+        opacity: 30%;
+        scale: 1;
+    }
+    100% {
+        opacity: 100%;
+        scale: 1.1;
+        box-shadow: 0px 0px 12px rgb(0, 0, 0, 0.7);
+    }
+}
+
+@keyframes animation_2 {
+    0% {
+        scale: 1;
+    }
+    100% {
+        scale: 1.1;
+        box-shadow: 0px 0px 30px rgb(0, 0, 0, 1);
+    }
+}
+
+@keyframes animation_3 {
+    0% {
+        scale: 1;
+    }
+    33% {
+        scale: 1.5;
+        text-shadow: 0px 0px 30px rgb(0, 0, 0, 5);
+    }
+    66% {
+        scale: 1;
+    }
+    100% {
+        scale: 2;
+        text-shadow: 0px 0px 30px rgb(0, 0, 0, 9);
+    }
+}
